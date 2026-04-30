@@ -1,15 +1,13 @@
 
     /* Reset básico */
     body {
-      margin: 50px;
+      margin: 150px;
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
     }
 
     /* Container central */
     .container {
-      margin-left: 80%;
-      margin-right: 80%;
       max-width: 800px;
       margin: 40px auto;
       background: #ffffff;
