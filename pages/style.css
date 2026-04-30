@@ -14,7 +14,7 @@ body {
   padding: 60px; 
   border-radius: 20px; 
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease; /* Faz o container todo reagir suavemente */
+  transition: transform 2.3s ease; /* Faz o container todo reagir suavemente */
 }
 
 /* Efeito: O card todo sobe levemente ao passar o mouse */
