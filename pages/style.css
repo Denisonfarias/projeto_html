@@ -7,16 +7,16 @@
       background-color: #f4f4f4;
     }
 
-    /* Container central */
+/* Container central */
     .container {
-      margin-left: 80%;
-      margin-right: 80%;
       max-width: 800px;
-      margin: 40px auto;
+      margin: 0 auto; 
       background: #ffffff;
-      padding: 80px; /* Aumente este valor para afastar o conteúdo das bordas */
+      padding: 80px; 
       border-radius: 30px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
     }
 
     /* Títulos */
