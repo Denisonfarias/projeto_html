@@ -19,7 +19,7 @@ body {
 
 /* Efeito: O card todo sobe levemente ao passar o mouse */
 .container:hover {
-  transform: translateY(-50px); 
+  transform: translateY(-500px); 
 }
 
 /* Título principal */
