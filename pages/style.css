@@ -19,6 +19,7 @@ body {
 
 /* Efeito: O card todo sobe levemente ao passar o mouse */
 .container:hover {
+  background: green;
   transform: translateY(-500px); 
 }
 
