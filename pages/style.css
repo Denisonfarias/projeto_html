@@ -8,6 +8,8 @@
 
     /* Container central */
     .container {
+      margin-left: 80%;
+      margin-right: 80%;
       max-width: 800px;
       margin: 40px auto;
       background: #ffffff;
