@@ -1,112 +1,98 @@
 /* Configurações gerais da página */
 body {
-  /* 50px topo/baixo | 150px laterais para afastar do monitor */
   margin: 50px 150px; 
-  /* Fonte moderna e profissional */
-  font-family: 'Segoe UI', Arial, sans-serif; 
-  /* Cor de fundo cinza bem claro para destacar o card */
-  background-color: #f8f9fa; 
-  /* Cor padrão do texto */
-  color: #333; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eef2f7; /* Um tom de fundo mais moderno */
+  color: #333;
 }
 
-/* O cartão branco centralizado */
+/* O cartão branco com efeito de flutuar */
 .container {
-  /* Largura máxima do conteúdo */
   max-width: 800px; 
-  /* Garante que o card fique no meio da tela */
   margin: 0 auto; 
-  /* Fundo totalmente branco */
   background: #ffffff; 
-  /* Espaço interno para o texto não encostar na borda do card */
   padding: 60px; 
-  /* Cantos levemente arredondados (mais profissional que muito redondo) */
-  border-radius: 12px; 
-  /* Sombra suave para dar profundidade */
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08); 
+  border-radius: 20px; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease; /* Faz o container todo reagir suavemente */
 }
 
-/* Estilo do título principal */
+/* Efeito: O card todo sobe levemente ao passar o mouse */
+.container:hover {
+  transform: translateY(-5px); 
+}
+
+/* Título principal */
 h1 {
-  /* Cor azul escuro profissional */
-  color: #1a202c; 
-  /* Centraliza o texto */
-  text-align: center; 
-  /* Remove margem superior padrão */
-  margin-top: 0; 
-  /* Espessura da fonte */
-  font-weight: 700; 
-}
-
-/* Subtítulos */
-h2, h3 {
-  /* Azul um pouco mais suave */
-  color: #2d3748; 
-  /* Espaço antes do subtítulo */
-  margin-top: 40px; 
-}
-
-/* Parágrafos e textos comuns */
-p {
-  /* Espaçamento entre linhas para facilitar a leitura */
-  line-height: 1.8; 
-  /* Cinza escuro para não cansar a vista */
-  color: #4a5568; 
-}
-
-/* Menu de Navegação */
-nav {
+  color: #2d3748;
   text-align: center;
-  /* Espaço acima e abaixo do menu */
-  margin: 30px 0; 
-  /* Espaço interno inferior */
-  padding-bottom: 20px; 
-  /* Linha fina para separar o topo do conteúdo */
-  border-bottom: 1px solid #edf2f7; 
+  margin-bottom: 40px;
 }
 
-/* Links do menu */
+/* Transformando o menu em uma área de botões */
+nav {
+  display: flex; /* Alinha os botões lado a lado */
+  justify-content: center; /* Centraliza os botões */
+  gap: 15px; /* Espaço entre os botões */
+  margin-bottom: 40px;
+}
+
+/* Estilo de Botão para os links do Menu */
 nav a {
-  /* Remove o sublinhado padrão */
-  text-decoration: none; 
-  /* Cor azul discreta */
-  color: #4a5568; 
-  /* Espaçamento entre os itens do menu */
-  margin: 0 15px; 
-  /* Deixa o texto levemente mais grosso */
-  font-weight: 500; 
-  /* Efeito suave ao passar o mouse */
-  transition: color 0.2s; 
+  text-decoration: none;
+  color: #4a5568;
+  background: #edf2f7; /* Cor de fundo do botão */
+  padding: 12px 25px; /* Tamanho do botão */
+  border-radius: 10px; /* Botão arredondado */
+  font-weight: 600;
+  transition: all 0.3s ease; /* Anima todas as mudanças */
+  border: 1px solid transparent;
 }
 
-/* Efeito ao passar o mouse no menu */
+/* Efeito ao passar o mouse nos botões */
 nav a:hover {
-  /* Muda a cor para azul quando o mouse está em cima */
-  color: #3182ce; 
+  background: #3182ce; /* Fundo muda para azul */
+  color: white; /* Texto muda para branco */
+  transform: scale(1.1); /* O botão cresce 10% */
+  box-shadow: 0 5px 15px rgba(49, 130, 206, 0.3); /* Sombra azul */
 }
 
-/* Estilo das imagens */
-img {
-  /* Faz a imagem se comportar como bloco para centralizar */
-  display: block; 
-  /* Centraliza a imagem horizontalmente */
-  margin: 30px auto; 
-  /* Arredonda os cantos da foto */
-  border-radius: 8px; 
-  /* Sombra leve na foto */
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
-}
-
-/* Listas de itens */
-ul {
-  /* Recuo para as bolinhas da lista */
-  padding-left: 20px; 
-}
-
-/* Itens da lista */
+/* Efeito nos itens da lista (hobbies) */
 li {
-  /* Espaçamento entre um item e outro */
-  margin-bottom: 12px; 
-  /* Mesma cor do parágrafo */
-  color: #4a5568; 
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #f8fafc;
+  border-radius: 8px;
+  list-style: none; /* Remove a bolinha padrão */
+  transition: transform 0.2s ease, margin-left 0.2s ease;
+  border-left: 4px solid #3182ce; /* Barrinha azul lateral */
+}
+
+/* Efeito: A lista se mexe para o lado ao passar o mouse */
+li:hover {
+  transform: translateX(10px); /* Move 10px para a direita */
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Imagem com efeito de zoom */
+img {
+  display: block;
+  margin: 30px auto;
+  border-radius: 15px;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+/* A imagem aumenta quando você passa o mouse */
+img:hover {
+  transform: scale(1.05) rotate(2deg); /* Aumenta e gira levemente */
+}
+
+/* Estilo para os subtítulos */
+h2, h3 {
+  border-bottom: 2px solid #edf2f7;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  color: #2d3748;
 }
