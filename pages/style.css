@@ -1,7 +1,7 @@
 
     /* Reset básico */
     body {
-      margin: 20px;
+      margin: 50px;
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
     }
@@ -11,7 +11,7 @@
       margin-left: 80%;
       margin-right: 80%;
       max-width: 800px;
-      margin: 200px;
+      margin: 40px auto;
       background: #ffffff;
       padding: 80px; /* Aumente este valor para afastar o conteúdo das bordas */
       border-radius: 30px;
