@@ -8,13 +8,13 @@
 
     /* Container central */
     .container {
-      margin-left: 40%;
-      margin-right: 40%;
+      margin-left: 80%;
+      margin-right: 80%;
       max-width: 800px;
       margin: 40px auto;
       background: #ffffff;
-      padding: 20px;
-      border-radius: 400px;
+      padding: 80px; /* Aumente este valor para afastar o conteúdo das bordas */
+      border-radius: 80px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
